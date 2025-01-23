@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #880572;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 200px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+button.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .product {
+    background-color: #333; 
+    color: white; 
+}
+
+body.dark-mode button.add-to-cart {
+    background-color: #555; 
+}
+
+body.dark-mode button.add-to-cart:hover {
+    background-color: #777; 
+}
+
+body.dark-mode .nav-links a {
+    color: #ccc; 
+}
+
+
+#toggleDark {
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1
+}
